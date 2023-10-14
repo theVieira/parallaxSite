@@ -125,7 +125,6 @@ header nav li a:hover {
 .material-symbols-outlined {
   animation: 2s infinite jumpArrow ease;
   -o-animation: 2s infinite jumpArrow ease;
-  -o-transition: all 2s ease;
 }
 
 @keyframes jumpArrow {
