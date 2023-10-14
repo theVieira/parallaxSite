@@ -1,0 +1,142 @@
+/* 'Poppins' , 'Playfair' , 'IBM Plex Mono' */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Playfair:opsz@5..1200&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00000065;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(/src/assets/bg_a.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.background::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.35) 40%);
+}
+
+header {
+  font-family: 'IBM Plex Mono';
+  letter-spacing: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  padding: 8px 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50rem;
+}
+
+header > nav {
+  font-family: 'Poppins';
+  display: flex;
+  gap: 5rem;
+}
+
+header > nav > li > a {
+  color: #fff;
+}
+
+header nav li a:hover {
+  cursor: pointer;
+  color: #cececee0;
+  transition: .3s;
+}
+
+.mainTextContainer {
+  margin-bottom: 24rem;
+  z-index: 50;
+}
+
+.mainTextContainer::before  {
+  content: '--';
+  font-size: 42px;
+  color: yellow;
+  position: relative;
+  left: -2.5rem;
+  top: 2rem;
+}
+
+.mainTextContainer .topMainText {
+  color: yellow;
+  font-size: 24px;
+}
+
+.mainTextContainer .mainText {
+  color: #fff;
+  font-size: 48px;
+  margin-top: 1rem;
+}
+
+.teste {
+  background-color: #cececee0;
+}
+
+.a {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(https://images6.alphacoders.com/105/1053011.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.material-symbols-outlined {
+  animation: 2s infinite jumpArrow ease;
+  -o-animation: 2s infinite jumpArrow ease;
+  -o-transition: all 2s ease;
+}
+
+@keyframes jumpArrow {
+  from {
+    bottom: 2rem;
+  }
+  
+  50% {
+    bottom: 2.5rem;
+  }
+  to {
+    bottom: 2rem;
+  }
+}
