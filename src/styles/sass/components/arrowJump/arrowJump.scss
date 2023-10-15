@@ -1,0 +1,16 @@
+.material-symbols-outlined {
+  animation: .8s infinite jumpArrow ease;
+}
+
+@keyframes jumpArrow {
+  from {
+    bottom: 2rem;
+  }
+  
+  50% {
+    bottom: 2.5rem;
+  }
+  to {
+    bottom: 2rem;
+  }
+}

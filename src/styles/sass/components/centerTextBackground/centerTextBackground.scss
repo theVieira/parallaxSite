@@ -1,0 +1,26 @@
+.centerTextBackground {
+  margin-bottom: 24rem;
+  z-index: 50;
+
+  &::before {
+  content: '--';
+
+  font-size: 42px;
+  color: yellow;
+
+  position: relative;
+  left: -2.5rem;
+  top: 2rem; 
+  }
+
+  .asideCenterTextBackground {
+    color: $text-secondaryColor;
+    font-size: 24px;
+  }
+
+  .mainCenterTextBackground {
+    color: $text-primaryColor;
+    font-size: 48px;
+    margin-top: 1rem;
+  }
+}

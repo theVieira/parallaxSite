@@ -1,0 +1,41 @@
+header {
+  font-family: 'IBM Plex Mono';
+  letter-spacing: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+
+  width: 100%;
+  height: 5rem;
+  padding: 8px 0;
+  z-index: 10;
+
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50rem;
+
+  nav {
+  font-family: 'Poppins';
+
+  display: flex;
+  gap: 5rem;
+
+    li {
+      a {
+        color: #fff;
+
+        &:hover {
+          cursor: pointer;
+          color: #9e9e9e;
+          
+          transition: .3s;
+        }
+      }
+    }
+  }
+}

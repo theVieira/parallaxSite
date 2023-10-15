@@ -1,0 +1,17 @@
+.contentContainer {
+  background-color: $background-primaryColor;
+  
+  display: flex;
+  justify-content: center;
+
+  text-align: justify;
+
+  .textContent {
+    width: 80%;
+    margin: 2rem 0 2rem 0;
+
+    .text:not(:first-child){
+      margin-top: 1rem;
+    }
+  }
+}
